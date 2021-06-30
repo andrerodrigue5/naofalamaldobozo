@@ -1,5 +1,5 @@
 <?php
-    $url = preg_replace('/^(\/{0,1})public(\/{0,1})/', '', $_SERVER['REDIRECT_URL']);
+    $url = preg_replace(['/^(\/{0,1})public(\/{0,1})/', '/^\//'], '', $_SERVER['REDIRECT_URL'] ?? '');
     $dado = explode('|', base64_decode($url));
 
     $nome = preg_replace('/[^a-zA-Z0-9à-úÀ-Ú\ ]/', '', $dado[0] ?? '');
