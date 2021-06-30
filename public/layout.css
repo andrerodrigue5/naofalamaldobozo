@@ -3,7 +3,7 @@ body {
 }
 #site {
     width: 100vw;
-    min-width: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
