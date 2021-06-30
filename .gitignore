@@ -1,0 +1,12 @@
+.DS_Store
+._*
+.ftp*
+.vscode
+package-lock.json
+/node_modules
+error_log
+/public/error_log
+/vendor
+composer.lock
+composer.lock
+phpmussel.yml

@@ -1,0 +1,16 @@
+version: '3'
+services:
+    apache:
+        image: andrerodrigue5/apache2-php8.0
+        container_name: apache-contador
+        ports:
+            - "80:80"
+            - "443:443"
+        volumes:
+            - .:/var/www/html/
+        networks:
+            - docker-rede
+        restart: always
+networks:
+    docker-rede:
+        driver: bridge
